@@ -2,10 +2,10 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
 const port = 3000;
-// Client connected list store in clients array
+// store connected clients
 let clients = [];
 
-// data to be sent to server
+// data store like DB
 let data = [
     { userId: "1", status: 'pending', description: 'user1 description' },
     { userId: "2", status: 'pending', description: 'user2 description' },
